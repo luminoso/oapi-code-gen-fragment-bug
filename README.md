@@ -1,9 +1,11 @@
-Refers to ioapi bug
+Refers to ioapi bug https://github.com/oapi-codegen/oapi-codegen/issues/1804
 
 To reproduce:
 
+```bash
 $ go run github.com/oapi-codegen/oapi-codegen/v2/cmd/oapi-codegen --config=server.cfg.yaml endpoints.yaml
 $ go run ./server.go
+```
 
 it will throw:
 
