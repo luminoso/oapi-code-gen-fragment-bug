@@ -1,0 +1,18 @@
+components:
+  schemas:
+    ASampleSchemaList:
+      $ref: "#/components/schemas/SampleSchema"
+    SampleSchema:
+      $ref: "sample_schema.yaml#/components/schemas/SampleSchema"
+openapi: 3.0.3
+paths:
+  /failed-endpoint:
+    get:
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ASampleSchemaList"
+          description: Sample endpoint
+info: {title: "", version: ""}

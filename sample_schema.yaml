@@ -1,0 +1,10 @@
+components:
+  schemas:
+    SampleSchema:
+      properties:
+        foo_bar:
+          $ref: '#/components/schemas/foo_bar'
+    foo_bar:
+      properties:
+        is_valid:
+          type: boolean
