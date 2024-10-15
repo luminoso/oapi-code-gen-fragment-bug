@@ -1,6 +1,6 @@
 components:
   schemas:
-    ASampleSchemaList:
+    SomeSampleSchemaList:
       $ref: "#/components/schemas/SampleSchema"
     SampleSchema:
       $ref: "sample_schema.yaml#/components/schemas/SampleSchema"
@@ -13,6 +13,6 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ASampleSchemaList"
+                $ref: "#/components/schemas/SomeSampleSchemaList"
           description: Sample endpoint
 info: {title: "", version: ""}
